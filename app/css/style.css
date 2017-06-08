@@ -1,0 +1,26 @@
+body {
+  background-color: rgba(128, 0, 0, 0.7);
+  background-image: url("http://www.fashionadexplorer.com/inr4ZkrUE8lHgopr.jpg");
+  background-position: top;
+  background-size: cover;
+  text-align: center;
+  color: White;
+  font-size: 16;
+}
+Htitle{
+ font-size: 20px;
+ font-weight: bold;
+ align: center;
+}
+
+Hdescribe{
+  align: center;
+}
+.logotype{
+  width: 20px;
+  height: 35px;
+}
+.container1{
+vertical-align: middle;
+align-items: flex-start;
+}
