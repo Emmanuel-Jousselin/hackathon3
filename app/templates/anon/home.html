@@ -1,82 +1,45 @@
-<link rel="stylesheet" type="text/css" href="app/css/style1.css" media="all" />
-<div class="Spec-check">
+<div class="container panel Sized">
+    <form class="form-horizontal ">
+        <fieldset>
 
-<div class="row">
+            <legend>Form Name</legend>
+            <div class="form-group form-group-sm">
+                <label> tu es
+                <select class="form-control">
+  <option>Un homme</option>
+  <option>Une femme</option>  
+</select>
+<label> tu recherches <br>
+                <select class="form-control">
+  <option>Un homme</option>
+  <option>Une femme</option>  
+</select> <br>
+                <!-- Text input http://getbootstrap.com/css/#forms -->
+                <div class="form-group form-group-sm">
+                    <label for="textinput" class="control-label col-sm-2">Age</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="textinput" placeholder="Age" type="number">
 
-  <div class="col-xs-pull-6">
-    <div id="Htitle">
-      <h1>LES REINES DU VICE</h1>
-    </div>
-    <div id="Hdescribe">
-      <p>Viens rencontrer notre communautée a l'aide de nos services</p>
-      <p>Elles ont toutes un vice... Humm!</p>
-    </div>
-  </div>
-  <p>Quel est ton vice?</p>
-<div class='container1'>
-  <div class="row">
-    <div class="col-xs-pull-2">
-      <label>
-  <input type='checkbox' name='avarice' value='Avarice'>
-  Avarice
-  </label>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-pull-2">
-      <label>
-  <input type='checkbox' name='colère' value='Colère'>
-  Colère
-  </label>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-pull-2">
-      <label>
-  <input type='checkbox' name='envie' value='Envie'>
-  Envie
-  </label>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-pull-2">
-      <label>
-  <input type='checkbox' name='gourmandise' value='Gourmandise'>
-  Gourmandise
-  </label>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-pull-2">
-      <label>
-  <input type='checkbox' name='luxure' value='Luxure'>
-  Luxure
-  </label>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-pull-2">
-      <label>
-  <input type='checkbox' name='orgueil' value='Orgueil'>
-  Orgueil
-  </label>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-pull-2">
-      <label>
-  <input type='checkbox' name='paresse' value='Paresse'>
-  Paresse
-  </label>
-  </div>
-  </div>
-</div>
-</div>
-  <button type="button" ui-sref="anon.register" class="btn btn-default">
-S'enregistrer
-</button>
-</center>
+                </div>
+            </div>
+            <!-- Text input http://getbootstrap.com/css/#forms -->
+            <div class="form-group">
+                <label for="textinput" class="control-label col-sm-2">Pseudo</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="textinput" placeholder="Votre pseudo" type="text">
 
-</div>
+                </div>
+            </div>
+            <!-- Text input http://getbootstrap.com/css/#forms -->
+            <div class="form-group">
+                <label for="textinput" class="control-label col-sm-2">Email</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="textinput" placeholder="Email" type="text">
+
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+    </form>
 
 </div>
