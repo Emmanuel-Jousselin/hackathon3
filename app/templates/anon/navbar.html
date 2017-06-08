@@ -13,10 +13,11 @@
       <ul class="nav navbar-nav">
         <li ui-sref-active="active"><a ui-sref="anon.home"><img class="logotype" src="img/small-2132091620122111225.png" alt="logo"></a></li>
       </ul>
+      <h1 id="titre"><span id="colortitle">7</span> SINS</h1>
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <li ui-sref-active="active"><a ui-sref="anon.login" ng-hide="auth.isAuthenticated()">Connexion</a></li>
-          <li ui-sref-active="active"><a ui-sref="anon.register" ng-hide="auth.isAuthenticated()">Inscription</a></li>
+          <li ui-sref-active="active" class="connexup"><a ui-sref="anon.login" ng-hide="auth.isAuthenticated()">Connexion</a></li>
+          <!-- <li ui-sref-active="active"><a ui-sref="anon.register" ng-hide="auth.isAuthenticated()">Inscription</a></li> -->
           <li ui-sref-active="active"><a ui-sref="user.dashboard" ng-show="auth.isAuthenticated()">Tableau de bord</a></li>
           <li><a ng-click="logout()" ng-show="auth.isAuthenticated()" href='#'>Déconnexion</a></li>
         </li>

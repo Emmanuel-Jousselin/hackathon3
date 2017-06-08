@@ -7342,6 +7342,62 @@ button.close {
   }
 }
 
+#titre {
+  text-align: center;
+  /*margin-top: 2em;*/
+  /*font-size: 28px;*/
+}
+
+#colortitle {
+  color: red;
+  /*margin-top: 2em;*/
+  /*font-size: 28px;*/
+}
+
+.connexup {
+  margin-top: -2.3em;
+}
+
+body {
+  /*background-color: rgba(128, 0, 0, 0.7);*/
+  background-image: url("http://www.famillechretienne.fr/var/fc/storage/images/media/images/articles/peche-capital-recadre/35090735-1-fre-FR/peche-capital-recadre_homeUne.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*text-align: center;*/
+  color: white;
+  font-size: 22px;
+}
+#Htitle{
+ font-size: 20px;
+ font-weight: bold;
+ /*align: center;*/
+ padding-left: 30px;
+}
+
+.Hdescribe{
+  /*align: center;*/
+  padding-left: 30px;
+}
+.logotype{
+  width: 2em;
+  height: 2.6em;
+}
+.home {
+/*vertical-align: middle;
+align-items: flex-start;*/
+}
+
+.users {
+  margin-top: 12em;
+  color: black;
+  background-color: lightgrey;
+
+}
+
+.part_user {
+  text-align: center;
+}
 
 
 /*# sourceMappingURL=app.css.map */
