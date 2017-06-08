@@ -1,26 +1,47 @@
 body {
-  background-color: rgba(128, 0, 0, 0.7);
-  background-image: url("http://www.fashionadexplorer.com/inr4ZkrUE8lHgopr.jpg");
-  background-position: top;
-  background-size: cover;
-  text-align: center;
-  color: White;
-  font-size: 16;
-}
-Htitle{
- font-size: 20px;
- font-weight: bold;
- align: center;
+    background-image: url("https://images.unsplash.com/photo-1473328714158-02cd8cce4a5a?dpr=1&auto=format&fit=crop&w=1500&h=2117&q=80&cs=tinysrgb&crop=&bg=");
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+    font-size: 16px;
+    background-repeat: no-repeat;
 }
 
-Hdescribe{
-  align: center;
+Htitle {
+    font-size: 20px;
+    font-weight: bold;
+    align: center;
 }
-.logotype{
-  width: 20px;
-  height: 35px;
+
+Hdescribe {
+    align: center;
 }
-.container1{
-vertical-align: middle;
-align-items: flex-start;
+
+.logotype {
+    width: 20px;
+    height: 35px;
+}
+
+.container1 {
+    vertical-align: middle;
+    align-items: flex-start;
+}
+
+copyright {
+    min-height: 40px;
+    background-color: #000000;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+    background-color: rgb(255, 255, 250, 0.6);
+}
+
+.Sized {
+    width: 20em;
+    opacity: 0.9;
+    border-radius: 20px;
 }
