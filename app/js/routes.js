@@ -71,6 +71,15 @@ angular.module('app')
                         controller: 'ProfileController'
                     }
                 }
-            });
+            })
+            .state('user.chat', {
+              url: '/chat',
+              views: {
+                  'content@': {
+                      templateUrl: 'user/chat.html',
+                      controller: 'ChatController'
+                  }
+              }
+          });
         $urlRouterProvider.otherwise('/');
     });

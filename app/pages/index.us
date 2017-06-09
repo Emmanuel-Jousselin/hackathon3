@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        <%= pkg.name %>
+        7 sins
     </title>
 
     <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />

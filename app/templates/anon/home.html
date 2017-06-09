@@ -1,87 +1,104 @@
-<link rel="stylesheet" type="text/css" href="app/css/style1.css" media="all" />
-<div class="Spec-check">
-
-<div class="row">
+<div class="row fondec">
 
   <div class="col-xs-pull-6">
     <div id="Htitle">
-      <h1>7 SINS</h1>
+      <h1><span class="colortitle">7</span> SINS</h1>
     </div>
     <div class="Hdescribe">
-      <p>Nous avons tous des petits défauts, des vices que l'on souhaite cacher...</p>
-      <p>Aujourd'hui, on vous propose de les assumer pleinement!</p>
+      <p class="shadow">Nous avons tous des petits défauts, des vices que l'on souhaite cacher...</p>
+      <p class="shadow">Aujourd'hui, on vous propose de les assumer pleinement!</p>
     </div>
   </div>
   <p class="Hdescribe">Et toi quel est ton vice?</p>
-<!-- <div class="container-fluid home">
-  <div class="row">
-    <div class="col-xs-pull-2">
-      <label>
-  <input type='checkbox' name='avarice' value='Avarice'>
-  Avarice
-  </label>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-pull-2">
-      <label>
-  <input type='checkbox' name='colère' value='Colère'>
-  Colère
-  </label>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-pull-2">
-      <label>
-  <input type='checkbox' name='envie' value='Envie'>
-  Envie
-  </label>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-pull-2">
-      <label>
-  <input type='checkbox' name='gourmandise' value='Gourmandise'>
-  Gourmandise
-  </label>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-pull-2">
-      <label>
-  <input type='checkbox' name='luxure' value='Luxure'>
-  Luxure
-  </label>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-pull-2">
-      <label>
-  <input type='checkbox' name='orgueil' value='Orgueil'>
-  Orgueil
-  </label>
-  </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-pull-2">
-      <label>
-  <input type='checkbox' name='paresse' value='Paresse'>
-  Paresse
-  </label>
-  </div>
-  </div>
-</div> -->
-<!-- </div>
-  <button type="button" ui-sref="anon.register" class="btn btn-default">
-S'enregistrer
-</button>
-</center> -->
 
+<div class="container panel Sized" ng-hide="auth.isAuthenticated()">
+  <form id="my-div" ng-submit="register()" methode="POST" class="form-horizontal form-hide">
+    <fieldset>
+
+      <legend>Complétez les informations</legend>
+      <div class="form-group form-group-sm">
+        <label> tu es
+                <select class="form-control" ng-model="user.genre">
+  <option>Un homme</option>
+  <option>Une femme</option>
+</select>
+<label for="usr">Name:</label>
+                <select class="form-control" ng-model="user.search">
+  <option>Un homme</option>
+  <option>Une femme</option>
+</select>
+          <label> Ton vice </label>
+        <select class="form-control" ng-model="user.vice">
+  <option>L'orgueil</option>
+  <option>L'avarice</option>
+  <option>L'envie</option>
+  <option>La colère</option>
+  <option>La luxure</option>
+  <option>La paresse</option>
+  <option>La gourmandise</option>
+</select> <br>
+        <!-- Text input http://getbootstrap.com/css/#forms -->
+        <div class="form-group form-group-sm">
+          <label for="textinput" class="control-label col-sm-2">Age</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="textinput" ng-model="user.age" placeholder="Age" type="number">
+
+          </div>
+        </div>
+        <!-- Text input http://getbootstrap.com/css/#forms -->
+        <div class="form-group">
+          <label for="textinput" class="control-label col-sm-2">Pseudo</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="textinput" ng-model="user.pseudo" placeholder="Votre pseudo" type="text">
+
+          </div>
+        </div>
+        <!-- Text input http://getbootstrap.com/css/#forms -->
+        <div class="form-group">
+          <label for="textinput" class="control-label col-sm-2">Email</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="textinput" ng-model="user.email" placeholder="Email" type="text">
+
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="textinput" class="control-label col-sm-2">mot de passe</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="textinput" ng-model="user.password" placeholder="mot de passe" type="text">
+
+          </div>
+        </div>
+
+        <button type="submit" ng-hide="auth.isAuthenticated()" class="btn btn-danger">Valider</button>
+    </fieldset>
+  </form>
+
+  </div>
+  <script type="text/javascript">
+  $(function(){
+$('.panel').hover(function(){
+  $(this).find('.panel-footer').slideDown(250);
+},function(){
+  $(this).find('.panel-footer').slideUp(250); //.fadeOut(205)
+});
+});
+  </script>
+
+  <div class="container-fluid users">
+    <h3 class="part_user">Retrouvez nos chers romantiques en manque d'amour et qui assument pleinement leurs personnalités.</h3>
+    <div class="container">
+      <div class="row">
+        <div class="panel panel-default">
+                <div class="panel-body">
+                    <span><img class="photos" src="img/DID3494.jpg" alt="profil"> </span>
+                </div>
+                <div class="panel-footer"><span ng-model="user.pseudo"></span><br>
+                  <span ng-model="user.age"></span><br>
+                  <span ng-model="user.vice"></span>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-</div>
-
-<div class="container-fluid users">
-  <h3 class="part_user">Retrouvez nos chers romantiques en manque d'amour et qui assument pleinement leurs personnalités.</h3>
-
 </div>

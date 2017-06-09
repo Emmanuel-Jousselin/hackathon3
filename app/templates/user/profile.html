@@ -1,1 +1,51 @@
-Profile de {{user.email}}
+<div class="container">
+  <div class="row">
+    <h1 class="profiltitle"><span class="colortitle">P</span>age de Profil</h1>
+  </div>
+  <div>
+    <input type="file" onchange="previewFile()"><br>
+    <img id="profiletof" src="img/DID3629.jpg" height="300" alt="Image preview...">  </div>
+    <script>
+   function previewFile(){
+       var preview = document.querySelector('img'); //selects the query named img
+       var file    = document.querySelector('input[type=file]').files[0]; //sames as here
+       var reader  = new FileReader();
+
+       reader.onloadend = function () {
+           preview.src = reader.result;
+       }
+
+       if (file) {
+           reader.readAsDataURL(file); //reads the data as a URL
+       } else {
+           preview.src = "";
+       }
+  }
+
+  previewFile();  //calls the function named previewFile()
+  </script>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Tu es</span>
+    <input type="text" class="form-control" ng-model="user.genre" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Recherchant</span>
+    <input type="text" class="form-control" ng-model="user.search" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Ton age</span>
+    <input type="text" class="form-control" ng-model="user.age" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Ton pseudo</span>
+    <input type="text" class="form-control" ng-model="user.pseudo" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Ton mail</span>
+    <input type="text" class="form-control" ng-model="user.email" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Ton vice</span>
+    <input type="text" class="form-control" ng-model="user.vice" aria-describedby="basic-addon1">
+  </div>
+</div>

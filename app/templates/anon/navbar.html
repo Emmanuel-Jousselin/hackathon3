@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse" role="navigation" ng-controller="NavbarController">
+<nav class="navbar navbar-inverse opac" role="navigation" ng-controller="NavbarController">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="btn btn-alert" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
@@ -13,13 +13,13 @@
       <ul class="nav navbar-nav">
         <li ui-sref-active="active"><a ui-sref="anon.home"><img class="logotype" src="img/small-2132091620122111225.png" alt="logo"></a></li>
       </ul>
-      <h1 id="titre"><span id="colortitle">7</span> SINS</h1>
+      <h1 id="titre"><span class="colortitle">7</span> SINS</h1>
       <ul class="nav navbar-nav navbar-right">
         <li>
           <li ui-sref-active="active" class="connexup"><a ui-sref="anon.login" ng-hide="auth.isAuthenticated()">Connexion</a></li>
           <!-- <li ui-sref-active="active"><a ui-sref="anon.register" ng-hide="auth.isAuthenticated()">Inscription</a></li> -->
-          <li ui-sref-active="active"><a ui-sref="user.dashboard" ng-show="auth.isAuthenticated()">Tableau de bord</a></li>
-          <li><a ng-click="logout()" ng-show="auth.isAuthenticated()" href='#'>Déconnexion</a></li>
+          <li ui-sref-active="active" id="prof"><a ui-sref="user.profile" ng-show="auth.isAuthenticated()">Profil</a></li>
+          <li class="connexup decale"><a ng-click="logout()" ng-show="auth.isAuthenticated()" href='#'>Déconnexion</a></li>
         </li>
       </ul>
     </div>

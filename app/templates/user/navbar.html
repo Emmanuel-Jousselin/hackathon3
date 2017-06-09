@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse" role="navigation" ng-controller="NavbarController">
+<nav class="navbar navbar-inverse opac" role="navigation" ng-controller="NavbarController">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="btn btn-alert" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
@@ -11,14 +11,15 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
-                <li ui-sref-active="active"><a ui-sref="user.dashboard" ng-show="auth.isAuthenticated()">Dashboard</a></li>
+                <!-- <li ui-sref-active="active"><a ui-sref="user.dashboard" ng-show="auth.isAuthenticated()">Dashboard</a></li> -->
                 <li ui-sref-active="active"><a ui-sref="user.profile" ng-show="auth.isAuthenticated()">Profile</a></li>
 
             </ul>
+            <h1 id="titre"><span class="colortitle">7</span> SINS</h1>
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                <li ui-sref-active="active"><a ui-sref="anon.home">Website</a></li>
-                    <li><a ng-click="logout()" ng-show="auth.isAuthenticated()" href='#'>Deconnexion</a></li>
+                <li >
+                <li ui-sref-active="active" id="remonte"><a ui-sref="anon.home">Website</a></li>
+                    <li class="connexup decale"><a ng-click="logout()" ng-show="auth.isAuthenticated()" href='#'>Deconnexion</a></li>
                 </li>
             </ul>
         </div>

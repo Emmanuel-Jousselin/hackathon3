@@ -7342,13 +7342,18 @@ button.close {
   }
 }
 
+.login {
+  text-align: center;
+  opacity: 0.9;
+}
+
 #titre {
   text-align: center;
   /*margin-top: 2em;*/
   /*font-size: 28px;*/
 }
 
-#colortitle {
+.colortitle {
   color: red;
   /*margin-top: 2em;*/
   /*font-size: 28px;*/
@@ -7356,6 +7361,36 @@ button.close {
 
 .connexup {
   margin-top: -2.3em;
+}
+
+.decale {
+  padding-left: 4em;
+}
+
+#prof {
+  margin-top: -2.3em;
+}
+
+.opac {
+  opacity: 0.8;
+}
+
+#remonte {
+  margin-top: -2.3em;
+}
+
+.profiltitle {
+  text-align: center;
+}
+
+#profiletof {
+  border-radius: 8px;
+}
+
+.input-group {
+  width: 20%;
+  margin-top: 1em;
+  min-width: 10em;
 }
 
 body {
@@ -7378,26 +7413,64 @@ body {
 .Hdescribe{
   /*align: center;*/
   padding-left: 30px;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 .logotype{
-  width: 2em;
-  height: 2.6em;
+  width: 1.8em;
+  height: 2.4em;
 }
-.home {
-/*vertical-align: middle;
-align-items: flex-start;*/
+.shadow {
+text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.Sized{
+  float: right;
+  margin-right: 2em;
+  margin-top: -8em;
+  text-align: center;
+  width: 20em;
+  border-radius: 20px;
+  opacity: 0.8;
 }
 
 .users {
-  margin-top: 12em;
+  margin-top: 17em;
   color: black;
-  background-color: lightgrey;
-
+  background-color: #f2f2f2;
 }
 
 .part_user {
   text-align: center;
 }
+
+.photos {
+  height: 10%;
+  width: 10%;
+  border-radius: 4px;
+}
+
+.photos span {
+    visibility: hidden;
+}
+
+.photos img:hover + span {
+    visibility: visible;
+}
+
+.panel-default{
+    text-align:center;
+    cursor:pointer;
+    font-family: 'Raleway',sans-serif;
+}
+.panel-default > .panel-footer {
+    color: #fff;
+    background-color: #47c8ed;
+    display:none;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+.panel-default i{
+    font-size: 5em;
+    }
 
 
 /*# sourceMappingURL=app.css.map */

@@ -18,12 +18,22 @@ body {
 .Hdescribe{
   /*align: center;*/
   padding-left: 30px;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 .logotype{
-  width: 2em;
-  height: 2.6em;
+  width: 1.8em;
+  height: 2.4em;
 }
-.home {
-/*vertical-align: middle;
-align-items: flex-start;*/
+.shadow {
+text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.Sized{
+  float: right;
+  margin-right: 2em;
+  margin-top: -8em;
+  text-align: center;
+  width: 20em;
+  border-radius: 20px;
+  opacity: 0.8;
 }
