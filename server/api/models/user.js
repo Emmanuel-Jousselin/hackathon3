@@ -9,18 +9,6 @@ const hashCode = (s) => s.split("").reduce((a, b) => {
 }, 0);
 
 const userSchema = new mongoose.Schema({
-    genre: {
-      type: String,
-      required: true
-    },
-    search: {
-      type: String,
-      required: true
-    },
-    vice: {
-      type: String,
-      required: true
-    },
     email: {
         type: String,
         required: [true, 'Email address is required'],
@@ -32,14 +20,6 @@ const userSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: true
-    },
-    pseudo: {
-        type: String,
-        required: true
-    },
-    age: {
-        type: Number,
         required: true
     },
     isAdmin: {
