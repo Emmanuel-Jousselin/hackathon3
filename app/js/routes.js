@@ -53,10 +53,7 @@ angular.module('app')
                         templateUrl: 'user/navbar.html',
                         controller: 'NavbarController'
                     },
-                    'footer@': {
-                        templateUrl: 'user/footer.html',
-                        controller: 'FooterController'
-                    }
+                    
                 },
                 data: {
                     access: AccessLevels.user
