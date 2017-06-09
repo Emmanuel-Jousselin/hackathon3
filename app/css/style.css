@@ -1,33 +1,45 @@
 body {
-    background-image: url("https://images.unsplash.com/photo-1473328714158-02cd8cce4a5a?dpr=1&auto=format&fit=crop&w=1500&h=2117&q=80&cs=tinysrgb&crop=&bg=");
-    background-position: top;
-    background-size: cover;
-    text-align: center;
-    font-size: 16px;
-    background-repeat: no-repeat;
+
+  /*background-color: rgba(128, 0, 0, 0.7);*/
+  background-image: url("http://www.famillechretienne.fr/var/fc/storage/images/media/images/articles/peche-capital-recadre/35090735-1-fre-FR/peche-capital-recadre_homeUne.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*text-align: center;*/
+  color: white;
+  font-size: 22px;
+}
+#Htitle{
+ font-size: 20px;
+ font-weight: bold;
+ /*align: center;*/
+ padding-left: 30px;
 }
 
-Htitle {
-    font-size: 20px;
-    font-weight: bold;
-    align: center;
+.Hdescribe{
+  /*align: center;*/
+  padding-left: 30px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+.logotype{
+  width: 1.8em;
+  height: 2.4em;
+}
+.shadow {
+text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-Hdescribe {
-    align: center;
+.Sized{
+  float: right;
+  margin-right: 2em;
+  margin-top: -8em;
+  text-align: center;
+  width: 20em;
+  border-radius: 20px;
+  opacity: 0.8;
 }
 
-.logotype {
-    width: 20px;
-    height: 35px;
-}
-
-.container1 {
-    vertical-align: middle;
-    align-items: flex-start;
-}
-
-copyright {
+.copyright {
     min-height: 40px;
     background-color: #000000;
 }
@@ -38,6 +50,7 @@ copyright {
     width: 100%;
     height: 2em;
     background-color: rgb(255, 255, 250, 0.6);
+
 }
 
 .Sized {

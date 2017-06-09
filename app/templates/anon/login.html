@@ -1,5 +1,5 @@
-<div class="row">
-    <div class="col-xs-6 col-xs-offset-3">
+<div class="row login">
+    <div class="col-xs-4 col-xs-offset-3">
         <form class="form" name="loginForm" novalidate ng-submit="login()">
             <div ng-repeat="error in errors">{{error.error}}</div>
             <div class="input-group">
@@ -10,7 +10,7 @@
                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                 <input id="password" type="password" class="form-control" ng-model="user.password" required placeholder="Password">
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Connexion</button>
+            <button type="submit" class="btn btn-danger btn-block">Connexion</button>
         </form>
     </div>
 </div>
