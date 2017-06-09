@@ -127,6 +127,7 @@ export default class User {
         model.create(req.body,
             (err, user) => {
                 if (err || !user) {
+                  console.log(err);
                     if (err.code === 11000 || err.code === 11001) {
                         err.message = "Email " + req.body.email + " already exist";
                     }
