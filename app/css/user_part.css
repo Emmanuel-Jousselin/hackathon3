@@ -1,38 +1,44 @@
 .users {
-  margin-top: 17em;
-  color: black;
-  background-color: #f2f2f2;
+    margin-top: 17em;
+    color: black;
+    background-color: #f2f2f2;
 }
 
 .part_user {
-  text-align: center;
+    text-align: center;
 }
 
 .photos {
-  height: 10%;
-  width: 10%;
-  border-radius: 4px;
+    height: 10%;
+    width: 10%;
+    border-radius: 4px;
 }
 
 .photos span {
     visibility: hidden;
 }
 
-.photos img:hover + span {
+.photos img:hover+span {
     visibility: visible;
 }
 
-.panel-default{
-    text-align:center;
-    cursor:pointer;
-    font-family: 'Raleway',sans-serif;
+.panel-default {
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
 }
-.panel-default > .panel-footer {
+
+.panel-default>.panel-footer {
     color: #fff;
     background-color: #47c8ed;
-    display:none;
+    display: none;
     text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
 }
-.panel-default i{
+
+.panel-default i {
     font-size: 5em;
-    }
+}
+
+label {
+    color: black;
+}
