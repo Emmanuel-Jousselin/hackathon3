@@ -2,9 +2,27 @@
   <div class="row">
     <h1 class="profiltitle"><span class="colortitle">P</span>age de Profil</h1>
   </div>
-  <div>
+  <div class="row">
     <input type="file" onchange="previewFile()"><br>
     <img id="profiletof" src="img/DID3629.jpg" height="300" alt="Image preview...">
+    <div class="container chatprofile">
+      <div ng-repeat="msg in msgs | orderBy:createdAt">
+        <label>{{ msg.author.pseudo }}</label>
+        <span>{{msg.createdAt  | date:"MM/dd/yyyy 'à' H:mm"}}</span>
+        <div marked="msg.content"></div>
+        <a ng-click="likeMsg(msg._id, $index)">J'aime</a>
+        <span>{{ msg.liked.length}}</span>
+      </div>
+      <form ng-submit="sendMsg()">
+        <div class="form-group">
+          <label>Your message</label>
+          <textarea class="form-control" rows="3" ng-model="newMsg" id="msginput"></textarea>
+          <input type="submit" class="btn btn-default">
+        </div>
+      </form>
+      <div marked="newMsg"></div>
+    </div>
+
   </div>
   <script>
     function previewFile() {
@@ -54,21 +72,3 @@
     modifier
   </button>
   </div>
-
-  <div>
-  <div>
-    <ul>
-      <li class="newsuccess" ng-repeat="msg in msgs | orderBy:'createdate':true" ng-model="newMsg" ng-change="check()">
-        <div class="success">
-          <div layout="row post_line1">
-            <img ng-src="http://github.com/{{post.student.pseudo}}.png" class="md-avatar posts" alt="{{post.student.lastname}}" />
-            <div id="username"> {{ post.student.firstname }} {{ post.student.lastname }} </div>
-            <img ng-src="img/cool.png" class="smiley_sunglasses" alt="smiley" />
-          </div>
-          <hr>
-          <div class="post">{{ post.content }}</div>
-        </div>
-      </li>
-    </ul>
-</div>
-</div>
