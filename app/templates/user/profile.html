@@ -5,6 +5,7 @@
   <div class="row">
     <input type="file" onchange="previewFile()"><br>
     <img id="profiletof" src="img/DID3629.jpg" height="300" alt="Image preview...">
+
     <div class="container chatprofile">
       <div ng-repeat="msg in msgs | orderBy:createdAt">
         <label>{{ msg.author.pseudo }}</label>
