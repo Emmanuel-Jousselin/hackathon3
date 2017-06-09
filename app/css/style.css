@@ -1,4 +1,5 @@
 body {
+
   /*background-color: rgba(128, 0, 0, 0.7);*/
   background-image: url("http://www.famillechretienne.fr/var/fc/storage/images/media/images/articles/peche-capital-recadre/35090735-1-fre-FR/peche-capital-recadre_homeUne.jpg");
   background-position: top;
@@ -36,4 +37,24 @@ text-shadow: black 0.1em 0.1em 0.2em;
   width: 20em;
   border-radius: 20px;
   opacity: 0.8;
+}
+
+.copyright {
+    min-height: 40px;
+    background-color: #000000;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+    background-color: rgb(255, 255, 250, 0.6);
+
+}
+
+.Sized {
+    width: 20em;
+    opacity: 0.9;
+    border-radius: 20px;
 }
